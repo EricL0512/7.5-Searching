@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Algorithms {
+public class Algorithm {
     public int numberOfNegatives(ArrayList<Integer> integers) {
         int count = 0;
         for (int i: integers) {
@@ -22,4 +22,17 @@ public class Algorithms {
         }
         return false;
     }
+    public int firstAppearance(ArrayList<Integer> integers, int integer) {
+        for (int i = 0; i < integers.size(); i++) {
+            if (integers.get(i) == integer) return i;
+        }
+        return -1;
+    }
+    public int firstAppearance(int[] integers, int integer) {
+        for (int i = 0; i < integers.length; i++) {
+            if (integers[i] == integer) return i;
+        }
+        return -1;
+    }
+
 }
